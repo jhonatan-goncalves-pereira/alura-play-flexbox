@@ -1,3 +1,4 @@
+/* cabecalho */
 .cabecalho__container{
     display: flex;
     /*espaçamento entre os elementos horizontamente*/
@@ -10,8 +11,32 @@
 .cabecalho__pesquisar__item{
     display: none;
 }
+
+/* seção superior */
+.superior__secao__container{
+    display: flex;
+    white-space: nowrap;
+    gap:15px;
+    overflow: scroll;
+    align-items: center;
+}
+
+
+/* rodapé */
+.rodape__container{
+    display: flex;
+    flex-flow: column wrap; /*equivale a flex-wrap e flex-direction */
+}
+
+
 @media (min-width: 834px) {
+    /*cabecalho*/
     .cabecalho__pesquisar__item{
         display: block;
+    }
+
+    /*rodapé*/
+    .rodape__container{
+        justify-content: space-between;
     }
 }
